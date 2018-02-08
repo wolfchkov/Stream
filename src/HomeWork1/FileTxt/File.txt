@@ -1,0 +1,60 @@
+Person 1
+Name: Andrew
+Surname: Bespalov
+Birthday: 2000-01-21
+INN: 7895412
+Sex: MALE
+StartWork: 2017-05-12
+EndWork: 2017-07-30
+Earn: 12000
+--------------------
+Person 2
+Name: Jack
+Surname: NoOne
+Birthday: 1996-02-14
+INN: 8563274
+Sex: MALE
+StartWork: 2015-03-24
+EndWork: 2018-01-03
+Earn: 5000
+--------------------
+Person 3
+Name: Jane
+Surname: Whisper
+Birthday: 1998-11-01
+INN: 1425638
+Sex: FEMALE
+StartWork: 2016-09-27
+EndWork: 2017-10-08
+Earn: 4000
+--------------------
+Person 4
+Name: Chris
+Surname: Redfilt
+Birthday: 1962-05-26
+INN: 7539516
+Sex: MALE
+StartWork: 2001-08-13
+EndWork: 2018-02-06
+Earn: 11000
+--------------------
+Person 5
+Name: Andrew
+Surname: Redfilt
+Birthday: 1980-05-26
+INN: 1478943
+Sex: MALE
+StartWork: 2001-08-13
+EndWork: 2018-02-06
+Earn: 11000
+--------------------
+Person 6
+Name: Anna
+Surname: Ollof
+Birthday: 1985-07-26
+INN: 1068468
+Sex: FEMALE
+StartWork: 2012-08-20
+EndWork: 2018-02-06
+Earn: 8500
+--------------------
