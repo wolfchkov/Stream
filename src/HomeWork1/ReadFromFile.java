@@ -8,6 +8,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 public class ReadFromFile {
     Employee employee;
@@ -30,7 +31,7 @@ public class ReadFromFile {
                     Integer.parseInt(arr[4])
                     , Employee.Sex.valueOf(arr[5]),
                     LocalDate.parse(arr[6]),
-                    arr[7]==null ? null:LocalDate.parse(arr[7]),
+                    Objects.equals(arr[7], "null") ? LocalDate.now():LocalDate.parse(arr[7]),
                     Integer.parseInt(arr[8])));
 
         }

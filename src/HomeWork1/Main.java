@@ -85,7 +85,13 @@ public class Main {
 
 
     }
+    private static int add(int a,int b){
+        int max=0;
+        return  (b == 3) ? a :b;
+    }
     public static void main(String[] args) throws IOException {
+
+        add(3,4);
         streamApi=new ReadFromFile();
        streamWomen();
         earnMan();
