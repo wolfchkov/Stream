@@ -8,10 +8,10 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Main {
-   static StreamApi streamApi=new StreamApi();
+   static ReadFromFile streamApi;
     public static void streamWomen(){
         long a=streamApi.getListEmployee().stream()
-                .filter(e->e.getSex()==Sex.FEMALE)
+                .filter(e->e.getSex()== Employee.Sex.FEMALE)
                 .count();
         System.out.println("Count women: "+a);
     }
@@ -23,13 +23,13 @@ public class Main {
     }
     public static void maxEarnMan(){
         int a= streamApi.getListEmployee().stream()
-                .filter(e -> e.getName() == "Andrew")
+                .filter(e -> Objects.equals(e.getName(), "Andrew"))
                 .max(Comparator.comparing(Employee::getEarn)).get().getEarn();
         System.out.println("Name Andrew and max earn: "+a);
     }
     public static void minEarnWomen(){
         int a= streamApi.getListEmployee().stream()
-                .filter(e -> e.getName()=="Jane")
+                .filter(e -> Objects.equals(e.getName(), "Jane"))
                 .min(Comparator.comparing(Employee::getEarn)).get().getEarn();
         System.out.println("Name Jane and min earn: "+a);
     }
@@ -63,7 +63,7 @@ public class Main {
     }
     public static void intemidiateEarnMans(){
         double a=streamApi.getListEmployee().stream()
-                .filter(e->e.getSex()==Sex.MALE)
+                .filter(e->e.getSex()== Employee.Sex.MALE)
                 .mapToInt(e->  LocalDate.now().getYear()-e.getBirthday().getYear()).average().getAsDouble();
         System.out.println("Average age all mans: "+a);
     }
@@ -86,7 +86,7 @@ public class Main {
 
     }
     public static void main(String[] args) throws IOException {
-
+        streamApi=new ReadFromFile();
        streamWomen();
         earnMan();
         maxEarnMan();
@@ -98,7 +98,6 @@ public class Main {
         intemidiateEarnMans();
         intemidiateEarnWomen();
         groubByAllWomen();
-       streamApi.textFileAdd();
     }
 
 

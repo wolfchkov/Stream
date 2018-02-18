@@ -1,3 +1,4 @@
+/*
 package HomeWork1;
 
 import java.io.BufferedWriter;
@@ -55,3 +56,4 @@ public class StreamApi {
         return employee;
     }
 }
+*/

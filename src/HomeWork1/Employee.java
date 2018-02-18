@@ -2,9 +2,7 @@ package HomeWork1;
 
 import java.time.LocalDate;
 
-enum Sex{
-    MALE,FEMALE
-}
+
 public class Employee {
    private String name,surname,patronymic;
     private LocalDate birthday;
@@ -14,6 +12,11 @@ public class Employee {
     private LocalDate dateOfWorkDown;
     private int earn;
 
+
+
+    enum Sex{
+        MALE,FEMALE
+    }
     public Employee(String name, String surname, String patronymic,
                     LocalDate birthday, int INN, Sex sex, LocalDate dateOfWorkUp, LocalDate dateOfWorkDown, int earn) {
         this.name = name;
