@@ -2,7 +2,9 @@ package HomeWork1;
 
 import java.time.LocalDate;
 
-
+/**
+Где переопределенный equals и hashcode????
+**/
 public class Employee {
    private String name,surname,patronymic;
     private LocalDate birthday;
@@ -13,7 +15,12 @@ public class Employee {
     private int earn;
 
 
-
+    //должен быть в начале класса или в самом конце
+    //есть порядок объявления компонентов класса
+    //1. статические поля
+    //2. конструктор(ы)
+    //3. методы     
+    //4. вложенные классы
     enum Sex{
         MALE,FEMALE
     }
