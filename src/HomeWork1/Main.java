@@ -7,6 +7,18 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+/**
+Не ходится.
+Создай интерфейс, с методом 
+void proccesstEmployees(List<Employee> employees);
+
+Далее решение каждой задачи реализуй в отдельном классе,
+который наследует данный интерфейс 
+
+И достаточно один раз получить список сотрудников и потом передать 
+его во все реализации, не надо читать каждый раз с файла.
+
+**/
 public class Main {
    static ReadFromFile streamApi;
     public static void streamWomen(){
